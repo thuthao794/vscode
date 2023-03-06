@@ -1,0 +1,15 @@
+kw = float(input("Tieu thu="))
+
+if kw >=1 and kw <= 100:
+   tong = kw * 550
+elif kw <= 150:
+    tong = (100 * 550) + ((kw - 100) * 750)
+elif kw <= 200:
+    tong = (100 * 550) + (50 * 750) + ((kw - 150) * 950)
+else:
+    tong = (100 * 550) + (50 * 750) + (50 * 950) + ((kw - 200) * 1350)
+
+vat = tong * 0.1
+thanhtien = tong + vat
+
+print("Phai tra=",thanhtien,sep="")
